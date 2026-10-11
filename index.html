@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.title">Martin Holý — hry, u kterých se nedá prohrát</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Vizitka Martina Holého: osm her pro děti dělaných v Godotu — od KidGame a Say Ahoy po Kouzelníkovu věž a GalaxyTravel.">
+<meta name="color-scheme" content="dark">
+<meta name="author" content="Martin Holý">
+
+<meta property="og:type" content="website">
+<meta property="og:title" data-i18n-attr="content:meta.title" content="Martin Holý — hry, u kterých se nedá prohrát">
+<meta property="og:description" data-i18n-attr="content:meta.description" content="Vizitka Martina Holého: hry pro děti dělané v Godotu.">
+<meta property="og:url" content="https://holystack.cz/">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#obsah" data-i18n="header.skip">Přeskočit na obsah</a>
+
+<header class="entry">
+  <div class="entry__id">
+    <h1 class="entry__name">Martin Holý</h1>
+    <p class="entry__role" data-i18n="header.role">Dělám hry, u kterých se nedá prohrát.</p>
+  </div>
+  <nav class="lang" aria-label="Jazyk" data-i18n-attr="aria-label:header.lang">
+    <button type="button" class="lang__btn" data-lang="cs" lang="cs">CZ</button>
+    <span class="lang__sep" aria-hidden="true"></span>
+    <button type="button" class="lang__btn" data-lang="en" lang="en">EN</button>
+  </nav>
+</header>
+
+<main id="obsah">
+
+  <section class="gallery" aria-labelledby="gallery-heading">
+    <h2 id="gallery-heading" class="visually-hidden" data-i18n="gallery.heading">Hry</h2>
+    <p class="gallery__note" data-i18n="gallery.note">Osm projektů, žádný zatím nevyšel. Fáze je u každého napsaná.</p>
+    <div class="hang" id="hang"></div>
+  </section>
+
+  <section class="wall-text" aria-labelledby="about-heading">
+    <h2 id="about-heading" class="section-heading" data-i18n="about.heading">O mně</h2>
+    <div class="wall-text__body">
+      <p data-i18n="about.p1"></p>
+      <p data-i18n="about.p2"></p>
+      <p data-i18n="about.p3"></p>
+    </div>
+  </section>
+
+  <section class="desk" aria-labelledby="contact-heading">
+    <div class="desk__form">
+      <h2 id="contact-heading" class="section-heading" data-i18n="contact.heading">Napiš mi</h2>
+      <p class="desk__lead" data-i18n="contact.lead"></p>
+
+      <form id="contact-form" novalidate>
+        <div class="field-row">
+          <p class="field">
+            <label for="f-name" data-i18n="contact.name">Jméno</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </p>
+          <p class="field">
+            <label for="f-email" data-i18n="contact.email">E-mail</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </p>
+        </div>
+        <p class="field">
+          <label for="f-message" data-i18n="contact.message">Zpráva</label>
+          <textarea id="f-message" name="message" rows="6" required></textarea>
+        </p>
+
+        <p class="field field--trap" aria-hidden="true">
+          <label for="f-website">Website</label>
+          <input id="f-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </p>
+
+        <div class="desk__actions">
+          <button type="submit" class="button" data-i18n="contact.submit">Odeslat zprávu</button>
+          <p class="desk__hint" id="form-hint"></p>
+        </div>
+        <p class="desk__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="desk__direct">
+        <span data-i18n="contact.direct">Nebo rovnou na adresu</span>
+        <a href="mailto:holy.mar@gmail.com">holy.mar@gmail.com</a>
+      </p>
+    </div>
+
+    <aside class="support" id="support" hidden>
+      <h2 class="support__heading" data-i18n="support.heading">Podpořit vývoj</h2>
+      <p class="support__body" data-i18n="support.body"></p>
+      <a class="support__action" id="support-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="support.action">Přispět přes PayPal</a>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p data-i18n="footer.built"></p>
+  <p><a href="soukromi.html" data-i18n="footer.privacy">Zásady ochrany soukromí</a></p>
+</footer>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
